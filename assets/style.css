@@ -81,10 +81,16 @@ body{
 .button{
     width: 55px;
     height: 55px;
-    border: solid 1px; 
+    border: solid 1px;
+    border-radius: 5px;
+    box-shadow: 5px 0 5px black;
+    margin: 5px 5px;    
 }
 .button-egal{
-    width: 110px;
+    width: 121px;
     height: 55px;
-    border: solid 1px; 
+    border: solid 1px;
+    border-radius: 5px;
+    box-shadow: 5px 0 5px black;
+    margin: 5px 5px;    
 }
