@@ -20,7 +20,15 @@ body{
     position:relative;
     top: 5px;
     display: flex;
-    border: solid 1px ;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px;
+}
+.head-1-bar{
+    width: 30%;
+    height: 10px;
+    background: #000;
+    border-radius: 20px;
 }
 .head-2{
     width: 100%;
@@ -39,6 +47,12 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
+}
+.bar-1{
+    width: 10px;
+    height: 25px;
+    border: solid 1px ;
+    margin-right: 10px;
 }
 .bar-1{
     width: 10px;
