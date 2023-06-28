@@ -150,7 +150,7 @@ body{
 }
 @media only screen and (max-width:600px){
     .screen span{
-        width: 146px;
+        width: fit-content;
         color: #F42C04;
         font-size: 25px;
          animation: math-error 1s infinite  backwards; 
@@ -160,7 +160,7 @@ body{
             margin-left: 0;
         }
         to{
-            margin-left: calc(100% - 146px);
+            margin-left: calc(100% - 50px);
         }
     }
 }
