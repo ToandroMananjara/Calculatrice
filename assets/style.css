@@ -117,3 +117,17 @@ body{
     justify-content: center;
     cursor: pointer;
 }
+.button:active{
+    animation: click 1s backwards;
+}
+.button-egal:active{
+    animation: click 1s backwards;
+}
+@keyframes click {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}
