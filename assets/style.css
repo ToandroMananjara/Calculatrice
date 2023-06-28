@@ -58,6 +58,11 @@ body{
     justify-content: end;
     align-items: center;
 }
+.bar-0{
+    width: 5px;
+    height: 15px;
+    background: #E2E2E2;
+}
 .bar-1{
     width: 10px;
     height: 25px;
