@@ -85,7 +85,7 @@ body{
     
 }
 .screen span{
-    width: 146px;
+    width: 80px;
     color: #F42C04;
     font-size: 30px;
     animation: math-error 1s infinite  backwards; 
@@ -145,22 +145,22 @@ body{
         margin-left: 0;
     }
     to{
-        margin-left: calc(100% - 146px);
+        margin-left: calc(100% - 80px);
     }
 }
 @media only screen and (max-width:600px){
     .screen span{
-        width: 122px;
+        width: 70px;
         color: #F42C04;
         font-size: 25px;
-        /* animation: math-error 1s infinite  backwards;  */
+        padding: 0;        /* animation: math-error 1s infinite  backwards;  */
     }
     @keyframes math-error {
         from{
             margin-left: 0;
         }
         to{
-            margin-left: calc(100% - 122px);
+            margin-left: calc(100% - 70px);
         }
     }
 }
