@@ -160,7 +160,7 @@ body{
             margin-left: 0;
         }
         to{
-            margin-left: calc(100% - 122px);
+            margin-left: calc(100% - 120px);
         }
     }
 }
