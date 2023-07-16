@@ -21,6 +21,7 @@ let ac = document.getElementById('ac')
 let virgule = document.getElementById('virgule')
 let pourcent = document.getElementById('pourcent')
 let resultat = document.getElementById('result')
+
 ac.onclick=function(){
     screen.value= ' '
     resultat.textContent=''
