@@ -7,25 +7,31 @@
     <title>Casio-Calculatrice</title>
 </head>
 <body>
-    <div class="container">
+    
+    <div class="container" id="container">
         <div class="head-1">
-            <div></div>
+            <div class="mode" id="mode">
+                <div class="boule" id="boule"></div>
+            </div>
             <div class="head-1-bar"></div>
-            <div></div>
+            <div class="vide"></div>
         </div>
 
         <div class="head-2">
             <div class="name"><span>Casio </span>Calculatrice</div>
-            <div class="battery">
+            <!-- <div class="battery">
                 <div class="bar-0"></div>
                 <div class="bar-1"></div>
                 <div class="bar-1"></div>
                 <div class="bar-1"></div>
                 <div class="bar-1"></div>
-            </div>
+            </div> -->
         </div>
 
-        <div class="screen"><span>Maths<br>Error</span></div>
+        <div class="ecran">
+            <input class="screen" id="screen">
+            <div class="resultat" id="result"></div>
+        </div>
         <div class="button-container">
             <div class="button" id="ac">AC</div>
             <div class="button" id="plus-ou-moins">+/-</div>
@@ -48,5 +54,6 @@
             <div class="button" id="egal">=</div>
         </div>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
