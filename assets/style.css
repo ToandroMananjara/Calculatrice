@@ -17,7 +17,7 @@ body{
 .boule-toogle{
     position: absolute;
     right: -32px;
-    background:#121212!important;
+    background:#FFFFFF!important;
 }
 .container-toggle{
   background: #121212!important;
@@ -83,7 +83,7 @@ body{
 .name span{
     font-weight: 1000;
 }
-.battery{
+/* .battery{
     width: 50%;
     height: 100% ;
     position: absolute;
@@ -91,7 +91,7 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
-}
+} */
 .bar-0{
     width: 5px;
     height: 15px;
