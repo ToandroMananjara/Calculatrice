@@ -22,8 +22,10 @@ let virgule = document.getElementById('virgule')
 let pourcent = document.getElementById('pourcent')
 let resultat = document.getElementById('result')
 
+let inverse = document.getElementById('plus-ou-moins')
+
 ac.onclick=function(){
-    screen.value= ' '
+    screen.value= ''
     resultat.textContent=''
  }
  pourcent.onclick=function(){
@@ -80,12 +82,46 @@ un.onclick=function(){
  virgule.onclick=function(){
     screen.value+='.'
  }
- egal.onclick=function(){
-    resultat.textContent=eval(screen.value)
 
-    
+ const testBeforCalcul = (value, operating) => {
+   if(value[0] === '/' || value[0] === '*'){
+      console.log('synthaxe error');
+      return false
+   }
+   else{
+      for (let index = 0; index < operating.length; index++) {
+         if(value[value.length - 1] === operating[index]){
+            console.log('synthaxe error 2');
+            return false
+         }
+      } 
+      for (let index = 0; index < value.length - 1; index++) {
+         console.log('boucle en marche');
+         for (let j = 0; j < operating.length; j++) {
+            for (let k = 0; k < operating.length; k++) {
+               if(value[index] === operating[j] && value[index + 1] === operating[k]){
+                  console.log('synthaxe error 3');
+                  return false
+               }
+            }  
+         }
+      }
+   }
  }
+ const operating = ['/', '*', '-', '+'] 
 
+ egal.onclick=function(){
+    let screenValue = screen.value;
+    let calculFound = testBeforCalcul(screenValue, operating)
+         console.log('Calcul found', calculFound);
+         if(calculFound === false){
+            console.log("synthaxe error");
+         }          
+         else{
+            console.log(screen.value);
+            resultat.textContent= eval(screen.value)
+         }
+ }
 
 mode.addEventListener('click',function(){
     boule.classList.toggle('boule-toogle')
